@@ -1,6 +1,10 @@
+
+
 // Get references to page elements
-var $exampleText = $("#example-text");
+var userName = $("user-name");
+
 var $exampleDescription = $("#example-description");
+// link to cards here
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
