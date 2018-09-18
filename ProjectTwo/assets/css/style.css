@@ -1,0 +1,10 @@
+.dropdown {
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+.btn {
+    
+}
