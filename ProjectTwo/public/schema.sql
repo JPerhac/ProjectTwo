@@ -1,4 +1,7 @@
 DROP DATABASE IF EXISTS diets_db;
+
+CREATE database diets_db;
+
 USE diets_db;
 -- Use models and assopciate to do the same below; create relationship and queries
 
@@ -7,21 +10,18 @@ CREATE TABLE items (
     calories INT,
     categories VARCHAR (255),
     price DECIMAL(4,2),
-    group VARCHAR(255),
-    product_id INT NOT NULL AUTO_INCREMENT
+    productId INT NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
 CREATE TABLE diet_categories (
     diet VARCHAR(255),
-    group VARCHAR(255),
     info VARCHAR (255),
-    product_id INT NOT NULL
+    productId INT NOT NULL PRIMARY KEY
 );
 
 CREATE TABLE questions (
     question VARCHAR(255),
-    group VARCHAR(255),
-    qID INT NOT NULL AUTO_INCREMENT
+    qID INT NOT NULL AUTO_INCREMENT PRIMARY KEY
 );
 
 CREATE TABLE user (

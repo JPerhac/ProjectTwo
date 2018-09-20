@@ -1,8 +1,14 @@
 module.exports = function(sequelize, DataTypes) {
-    var user = sequelize.define("user", {
-        usrID: DataTypes.STRING,
-        qID: DataTypes.STRING,
-        usrInput: DataTypes.STRING
-    });
-    return user;
-}
+  var user = sequelize.define("user", {
+    usrId: {
+      type: DataTypes.STRING
+    },
+    qId: {
+      type: DataTypes.INTEGER
+    },
+    usrInput: {
+      type: DataTypes.STRING
+    }
+});
+  return user;
+};
