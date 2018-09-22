@@ -1,19 +1,21 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+var category = $("dropdown-item")
+var meat = $("meats");
+var fish = $("fish");
+var veggies = $("veggies");
+var dairy = $("dairy");
+var dataDump = $("dataDump")
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveExample: function(example) {
+  saveExample: function(category) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
       },
       type: "POST",
       url: "api/examples",
-      data: JSON.stringify(example)
+      data: JSON.stringify(category)
     });
   },
   getExamples: function() {
@@ -54,8 +56,8 @@ var refreshExamples = function() {
       return $li;
     });
 
-    $exampleList.empty();
-    $exampleList.append($examples);
+    dataDump.empty();
+    dataDump.append($examples);
   });
 };
 
