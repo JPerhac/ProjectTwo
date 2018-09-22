@@ -6,5 +6,21 @@
 }
 
 .btn {
+    width:500px;
+    height:100px;
+    font-size:2rem;
+
+
+}
+
+a.dropdown-item{
+    font-size:1.5rem;
+}
+
+.dropdown-menu {
+    width:500px;
+}
+
+.card {
     
 }
