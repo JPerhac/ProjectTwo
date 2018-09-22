@@ -8,29 +8,32 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(fuction() {
-    $(#'fish').click(function() {
-        $.get('/api/examples', function(data) {
-            $('#dataDump').html(data);
+$(document).ready(function(){
+    $('#fish').click(function(){
+        alert("Hi");
+        $.get( "/api/examples", function( data ) {
+            $( "#dataDump" ).html( data );
             console.log(data);
-        });
+          });
     });
 });
 
-$(document).ready(fuction() {
-    $(#'veggies').click(function() {
-        $.get('/api/examples', function(data) {
-            $('#dataDump').html(data);
+$(document).ready(function(){
+    $('#veggies').click(function(){
+        alert("Hi");
+        $.get( "/api/examples", function( data ) {
+            $( "#dataDump" ).html( data );
             console.log(data);
-        });
+          });
     });
 });
 
-$(document).ready(fuction() {
-    $(#'dairy').click(function() {
-        $.get('/api/examples', function(data) {
-            $('#dataDump').html(data);
+$(document).ready(function(){
+    $('#dairy').click(function(){
+        alert("Hi");
+        $.get( "/api/examples", function( data ) {
+            $( "#dataDump" ).html( data );
             console.log(data);
-        });
+          });
     });
 });
