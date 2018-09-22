@@ -1,7 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
-  var questions = sequelize.define("questions", {
-  question: {
-    type: DataTypes.STRING
+  var questions = sequelize.define("Questions", {
+    question: {
+      type: DataTypes.STRING
     },
     group: {
       type: DataTypes.STRING
@@ -9,6 +9,6 @@ module.exports = function(sequelize, DataTypes) {
     qId: {
       type: DataTypes.INTEGER
     }
-});
+  });
   return questions;
 };

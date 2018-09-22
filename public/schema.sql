@@ -4,7 +4,7 @@ CREATE database diets_db;
 
 USE diets_db;
 -- Use models and assopciate to do the same below; create relationship and queries
-
+/*
 CREATE TABLE items (
     product VARCHAR(255),
     calories INT,
@@ -79,4 +79,5 @@ CREATE TABLE user (
     usrId VARCHAR(255),
     inputKey BOOLEAN,
     usr_input INT NOT NULL
-)
+);
+

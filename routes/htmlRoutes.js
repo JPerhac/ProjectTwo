@@ -2,6 +2,7 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Load index page
+  
   app.get("/", function(req, res) {
     db.Diets.findAll({}).then(function(dbDiets) {
       res.render("index", {
