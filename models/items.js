@@ -1,12 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
-  var items = sequelize.define("items", {
+  var items = sequelize.define("Items", {
     product: {
       type: DataTypes.STRING
     },
-    calories: { 
+    calories: {
       type: DataTypes.INTEGER
     },
-    categories: { 
+    categories: {
       type: DataTypes.STRING
     },
     price: {
@@ -15,6 +15,6 @@ module.exports = function(sequelize, DataTypes) {
     productId: {
       type: DataTypes.INTEGER
     }
-});
+  });
   return items;
 };
