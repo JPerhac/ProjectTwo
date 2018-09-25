@@ -6,8 +6,8 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-
-  
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -30,10 +30,9 @@
             Diet Products
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" id="meats" >MEAT</a>
-            <a class="dropdown-item" id="fish" >FISH</a>
-            <a class="dropdown-item" id="veggies" >VEGGIES</a>
-            <a class="dropdown-item" id="dairy" >DAIRY</a>
+            {{#each diets}}
+              <a class="dropdown-item" id="{{ diet }}" >{{ diet }}</a>
+            {{/each}}
           </div>
         </div>
       </div>

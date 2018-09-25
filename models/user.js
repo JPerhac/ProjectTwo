@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var user = sequelize.define("user", {
+  var user = sequelize.define("User", {
     usrId: {
       type: DataTypes.STRING
     },
@@ -9,6 +9,6 @@ module.exports = function(sequelize, DataTypes) {
     usrInput: {
       type: DataTypes.STRING
     }
-});
+  });
   return user;
 };

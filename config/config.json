@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "P@ssword",
     "database": "diets_db",
     "host": "localhost",
     "dialect": "mysql"
