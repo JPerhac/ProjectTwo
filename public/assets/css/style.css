@@ -1,3 +1,7 @@
+html {
+    background-color: #99cc00;
+}
+
 .dropdown {
     left: 50%;
     right: auto;
@@ -6,27 +10,30 @@
 }
 
 .btn {
-    width:500px;
-    height:100px;
-    font-size:2rem;
+    width: 500px;
+    height: 100px;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
 
 
 }
 
-a.dropdown-item{
-    font-size:1.5rem;
+a.dropdown-item {
+    font-size: 1.5rem;
     font-family: 'Francois One', sans-serif;
 }
 
 .dropdown-menu {
-    width:500px;
+    width: 500px;
 }
 
-.card {
-    
-}
+.card {}
 
 .jumbotron {
+    height: 188px;
+    
     font-family: 'Lobster', cursive;
-    font-size: 80px;
+    font-size: 100px;
+    background-image: url(../images/logoxxxs.JPG);
+    background-repeat: no-repeat;
 }
