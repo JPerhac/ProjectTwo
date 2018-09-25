@@ -30,6 +30,10 @@ a.dropdown-item {
 
 .nav {
     font-family: 'Lobster', cursive;
+    color: white;
+}
+.nav-link {
+color: white;
 }
 
 .dropdown-menu {
@@ -53,47 +57,95 @@ a.dropdown-item {
 
 .footer {
     font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
 }
 
-h1 {
-    font-family: 'Francois One', sans-serif;
+section {
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
 }
+
+h5 {
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+}
+
+#aboutus {
+    font-size: 28px;
+}
+
   aside {
-    font-family: 'Francois One', sans-serif;
+      font-size: 16px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
   }
 
 
   
-@media only screen and (min-width: 601px) {
-    .row .col.m1 {
-      width: 8.3333333333%;
-      margin-left: auto;
-      left: auto;
-      right: auto;
-    }
-      
-
-    @media only screen and (min-width: 0) {
-        html {
-          font-size: 14px;
-        }
-      }
-      
-      @media only screen and (min-width: 992px) {
-        html {
-          font-size: 14.5px;
-        }
-      }
-      
-      @media only screen and (min-width: 1200px) {
-        html {
-          font-size: 15px;
-        }
-      }
-      
-
- /* @media only screen and (min-width: 370px) {
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px)  { 
+     
      .jumbotron {
-         /* background-image: none; */
+         width: 762px;
+         background-image: url(../images/jumbotron1mobile.jpg);
+         border-image: none;
+
      }
-    } */
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait) 
+     { 
+        .jumbotron {
+            width: 762px;
+            background-image: url(../images/jumbotron1mobile.jpg);
+            border-image: none;
+   }
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2)
+    and (orientation : portrait) 
+     { 
+        .jumbotron {
+            width: 762px;
+            background-image: url(../images/jumbotron1mobile.jpg);
+            border-image: none;
+   }
+
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait) 
+     { 
+        .jumbotron {
+            width: 762px;
+            background-image: url(../images/jumbotron1mobile.jpg);
+            border-image: none;
+   }
+
+   
