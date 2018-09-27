@@ -62,7 +62,7 @@ color: white;
 }
 
 section {
-    font-family: 'Lobster', cursive;
+    font-family: 'Francois One', sans-serif;
     color: white;
     text-align: center;
 }
@@ -80,18 +80,37 @@ h6 {
 }
 
 #aboutus {
-    font-size: 28px;
+    font-size: 20px;
 }
 
   aside {
-      font-size: 16px;
+      font-size: 12px;
     font-family: 'Lobster', cursive;
     color: white;
     text-align: center;
   }
 
+#boxes{
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
 
+.box{
+    position: relative;
+    width:100px;
+    height:100px;
+    margin:4px;
+    display:inline-block;
+
+}
   
+.white{background-color: white}
+.plum{background-color: rgb(247, 216, 247)}
+.green{background-color: yellow}
+.yellow{background-color: green}
+
+
   @media only screen 
   and (min-device-width : 768px) 
   and (max-device-width : 1024px)  { 
